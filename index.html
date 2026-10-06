@@ -2,68 +2,290 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>A Birthday Surprise 🩷🖤</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Leah 💕</title>
+
 <style>
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100%;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-body{min-height:100vh;background:radial-gradient(circle at 20% 10%,rgba(255,105,180,.22),transparent 30%),radial-gradient(circle at 80% 90%,rgba(255,20,147,.18),transparent 35%),#09070b;color:#fff;display:flex;justify-content:center;align-items:center;overflow-x:hidden}
-.scene{width:min(94vw,430px);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 12px;position:relative}
-.card-wrap{width:100%;max-width:390px;perspective:1400px;-webkit-perspective:1400px;position:relative}
-.card{position:relative;width:100%;height:min(700px,calc(100vh - 48px));min-height:620px;border-radius:22px;background:#111;box-shadow:0 22px 70px rgba(0,0,0,.65);border:2px solid #ff4fa3;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;overflow:hidden}
-.front{position:absolute;inset:0;padding:34px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at 50% 30%,rgba(255,79,163,.2),transparent 30%),linear-gradient(145deg,#160b14,#080808 65%);transition:transform 1.15s cubic-bezier(.2,.75,.2,1),box-shadow 1.15s ease;transform-origin:left center;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;backface-visibility:hidden;-webkit-backface-visibility:hidden;z-index:4}
-.front.open{transform:rotateY(-172deg) translateZ(2px);-webkit-transform:rotateY(-172deg) translateZ(2px);box-shadow:18px 0 28px rgba(0,0,0,.45);pointer-events:none}
-.front h1{font-family:Georgia,serif;font-size:clamp(32px,9.5vw,52px);line-height:.92;margin:8px 0 14px;color:#ff75b9;text-shadow:3px 3px 0 #000;overflow-wrap:anywhere}
-.front .sub{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#ffd1e8}
-.front:after{content:"";position:absolute;top:0;bottom:0;left:0;width:5px;background:linear-gradient(#ff75b9,#7d174d,#ff75b9);box-shadow:2px 0 8px rgba(255,79,163,.35);pointer-events:none}
-.inside:before{content:"";position:absolute;top:0;bottom:0;left:0;width:3px;background:linear-gradient(transparent,#ff75b9,transparent);opacity:.45;pointer-events:none}
-.seal{width:82px;height:82px;border-radius:50%;display:grid;place-items:center;border:2px solid #ff75b9;background:#09070b;font-size:38px;margin-bottom:18px;box-shadow:0 0 0 8px rgba(255,117,185,.08)}
-.open-btn{margin-top:24px;min-height:52px;padding:12px 24px;border:0;border-radius:999px;background:#ff4fa3;color:#140812;font-weight:800;font-size:16px;box-shadow:0 8px 24px rgba(255,79,163,.35);cursor:pointer;touch-action:manipulation}
-.open-btn:active{transform:scale(.97)}
-.inside{position:absolute;inset:0;padding:42px 24px 30px;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;text-align:center;overflow-y:auto;background:radial-gradient(circle at 50% 15%,rgba(255,79,163,.24),transparent 28%),#0d0b0e;z-index:2;backface-visibility:hidden;-webkit-backface-visibility:hidden}
-.inside h2{font-family:Georgia,serif;color:#ff75b9;font-size:32px;line-height:1.05;margin:24px 0 12px}
-.inside p{font-size:16px;line-height:1.5;color:#f8eaf2;max-width:310px;margin:8px 0}
-.photo-slot{width:190px;height:120px;flex:0 0 auto;border:2px dashed #ff75b9;border-radius:16px;display:grid;place-items:center;color:#ffafd2;font-size:14px;margin:18px 0;background:rgba(255,79,163,.06)}
-.hint{font-size:12px;color:#b9aab3;margin-bottom:12px}
-.spider{position:absolute;z-index:8;width:48px;height:48px;border:0;background:transparent;font-size:35px;padding:0;cursor:pointer;touch-action:manipulation;transition:transform .25s ease;filter:drop-shadow(2px 3px 1px #000)}
-.spider.reacted{animation:scurry .48s ease}
-@keyframes scurry{0%{transform:scale(1) rotate(0)}35%{transform:translate(14px,-20px) rotate(20deg) scale(1.15)}70%{transform:translate(-16px,12px) rotate(-18deg) scale(.9)}100%{transform:translate(0,0) rotate(0) scale(1)}}
-.s1{top:18px;left:15px}.s2{top:25px;right:16px}.s3{bottom:22px;left:20px}.s4{bottom:28px;right:18px}
-.web{position:absolute;width:110px;height:110px;opacity:.16;border:1px solid #ff75b9;border-radius:50%}.w1{top:-50px;left:-50px}.w2{bottom:-55px;right:-55px}
-.confetti{position:fixed;left:50%;top:45%;width:9px;height:16px;border-radius:2px;pointer-events:none;z-index:100;animation:burst 1.4s ease-out forwards}
-@keyframes burst{0%{transform:translate(-50%,-50%) rotate(0) scale(1);opacity:1}100%{transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) rotate(var(--r));opacity:0}}
-.opened .open-btn{display:none}
-@media(max-height:700px){.card{height:calc(100vh - 32px);min-height:0}.scene{padding:16px 12px}}
-@media(prefers-reduced-motion:reduce){.front{transition:none}.spider.reacted{animation:none}}
+
+html,body{
+margin:0;
+min-height:100%;
+font-family:system-ui,-apple-system,sans-serif;
+background:#08070b;
+color:white;
+}
+
+body{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow-x:hidden;
+}
+
+.scene{
+width:100%;
+max-width:430px;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px 14px;
+}
+
+.card-wrap{
+width:100%;
+max-width:390px;
+perspective:1400px;
+-webkit-perspective:1400px;
+}
+
+.card{
+position:relative;
+width:100%;
+height:650px;
+border-radius:24px;
+background:#111;
+border:2px solid #ff4fa3;
+box-shadow:0 25px 70px rgba(0,0,0,.7);
+transform-style:preserve-3d;
+-webkit-transform-style:preserve-3d;
+overflow:hidden;
+}
+
+.inside{
+position:absolute;
+inset:0;
+padding:42px 25px 30px;
+background:
+radial-gradient(circle at 50% 10%,rgba(255,79,163,.25),transparent 30%),
+#0d0b0f;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+overflow-y:auto;
+}
+
+.inside h2{
+font-family:Georgia,serif;
+font-size:34px;
+line-height:1.05;
+color:#ff75b9;
+margin:0 0 15px;
+}
+
+.inside p{
+font-size:16px;
+line-height:1.5;
+color:#f8eaf2;
+margin:8px 0;
+}
+
+.photo{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:18px;
+border:2px solid #ff75b9;
+margin:15px 0;
+box-shadow:0 8px 25px rgba(255,79,163,.25);
+}
+
+.front{
+position:absolute;
+inset:0;
+z-index:5;
+padding:35px 22px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+radial-gradient(circle at 50% 25%,rgba(255,79,163,.25),transparent 32%),
+linear-gradient(145deg,#190b16,#080808 70%);
+border-radius:22px;
+transform-origin:left center;
+transform-style:preserve-3d;
+-webkit-transform-style:preserve-3d;
+backface-visibility:hidden;
+-webkit-backface-visibility:hidden;
+transition:transform 1s cubic-bezier(.2,.8,.2,1);
+}
+
+.front.open{
+transform:rotateY(-170deg);
+pointer-events:none;
+}
+
+.front h1{
+font-family:Georgia,serif;
+font-size:clamp(34px,10vw,52px);
+line-height:.95;
+margin:12px 0 18px;
+color:#ff75b9;
+text-shadow:3px 3px 0 #000;
+}
+
+.sub{
+font-size:13px;
+letter-spacing:.16em;
+text-transform:uppercase;
+color:#ffd1e8;
+}
+
+.seal{
+width:78px;
+height:78px;
+border-radius:50%;
+display:grid;
+place-items:center;
+font-size:36px;
+border:2px solid #ff75b9;
+background:#09070b;
+box-shadow:0 0 0 8px rgba(255,117,185,.08);
+}
+
+.open-btn{
+margin-top:25px;
+padding:14px 25px;
+border:0;
+border-radius:999px;
+background:#ff4fa3;
+color:#160812;
+font-weight:800;
+font-size:16px;
+}
+
+.spider{
+position:absolute;
+font-size:30px;
+background:none;
+border:0;
+z-index:10;
+}
+
+.s1{top:18px;left:15px}
+.s2{top:18px;right:15px}
+.s3{bottom:18px;left:15px}
+.s4{bottom:18px;right:15px}
+
+.hint{
+font-size:12px;
+color:#b9aab3;
+margin-top:10px;
+}
+
+.web{
+position:absolute;
+width:100px;
+height:100px;
+border:1px solid #ff75b9;
+border-radius:50%;
+opacity:.15;
+}
+
+.w1{top:-45px;left:-45px}
+.w2{bottom:-45px;right:-45px}
+
+@media(max-height:700px){
+.card{height:600px}
+}
 </style>
 </head>
+
 <body>
-<main class="scene"><div class="card-wrap"><section class="card" id="card" aria-label="Interactive birthday card">
+
+<main class="scene">
+<div class="card-wrap">
+
+<section class="card" id="card">
+
 <div class="inside">
-<div class="web w1"></div><div class="web w2"></div>
-<button class="spider s1" aria-label="Touch spider">🕷️</button><button class="spider s2" aria-label="Touch spider">🕷️</button><button class="spider s3" aria-label="Touch spider">🕷️</button><button class="spider s4" aria-label="Touch spider">🕷️</button>
-<div class="seal">🎂</div>
+
+<div class="web w1"></div>
+<div class="web w2"></div>
+
+<button class="spider s1">🕷️</button>
+<button class="spider s2">🕷️</button>
+<button class="spider s3">🕷️</button>
+<button class="spider s4">🕷️</button>
+
 <h2>Happy Birthday, Leah! 🎂💕</h2>
-<p>I know I’ve only known you for a short time, but you have added value to my life quickly. What I hold close are the moments in between the content, where I get to talk to you and it almost feels like time stops. Getting that Telegram notification has made me the happiest I’ve been in a while.</p>
-<p>This is your day, and you should be celebrated! I hope you have a really good one.</p>
+
+<p>
+I know I’ve only known you for a short time, but you have added value to my life quickly.
+</p>
+
+<p>
+What I hold close are the moments in between the content, where I get to talk to you and it almost feels like time stops.
+</p>
+
+<p>
+Getting that Telegram notification has made me the happiest I’ve been in a while.
+</p>
+
+<img class="photo" src="leah-birthday-collage.jpg" alt="Leah">
+
+<p>
+This is your day, and you should be celebrated! I hope you have a really good one.
+</p>
+
 <p><strong>Happy Birthday from basically your number one fan 🩷</strong></p>
-<div class="photo-slot">📸 Photo goes here later</div><div class="hint">Tap a spider and see what happens! 🕷️</div>
+
+<div class="hint">🕷️ Tap a spider for a surprise!</div>
+
 </div>
+
 <div class="front" id="front">
-<div class="web w1"></div><div class="web w2"></div>
-<button class="spider s1" aria-label="Touch spider">🕷️</button><button class="spider s2" aria-label="Touch spider">🕷️</button><button class="spider s3" aria-label="Touch spider">🕷️</button><button class="spider s4" aria-label="Touch spider">🕷️</button>
-<div class="seal">🕷️</div><div class="sub">A little birthday surprise</div>
+
+<div class="web w1"></div>
+<div class="web w2"></div>
+
+<button class="spider s1">🕷️</button>
+<button class="spider s2">🕷️</button>
+<button class="spider s3">🕷️</button>
+<button class="spider s4">🕷️</button>
+
+<div class="seal">🕷️</div>
+
+<div class="sub">A little birthday surprise</div>
+
 <h1>Happy<br>Birthday,<br>Leah! 💕</h1>
-<p>Tap the card to open it...</p><button class="open-btn" id="openBtn" type="button">OPEN THE CARD 💌</button>
-</div></section></div></main>
+
+<p>Tap below to open your card 💌</p>
+
+<button class="open-btn" id="openBtn">OPEN THE CARD 💌</button>
+
+</div>
+
+</section>
+</div>
+</main>
+
 <script>
-(()=>{const card=document.getElementById('card'),front=document.getElementById('front'),openBtn=document.getElementById('openBtn');let opened=false;
-function confettiBurst(){const pieces=['#ff4fa3','#ff75b9','#ffd1e8','#ffffff','#111111'];for(let i=0;i<70;i++){const el=document.createElement('span');el.className='confetti';el.style.background=pieces[i%pieces.length];el.style.setProperty('--x',`${(Math.random()*2-1)*260}px`);el.style.setProperty('--y',`${(Math.random()*2-1)*430}px`);el.style.setProperty('--r',`${Math.random()*900-450}deg`);document.body.appendChild(el);setTimeout(()=>el.remove(),1500)}}
-function openCard(){if(opened)return;opened=true;front.classList.add('open');card.classList.add('opened');confettiBurst()}
-openBtn.addEventListener('click',openCard);
-front.addEventListener('click',e=>{if(!e.target.closest('.spider')&&e.target!==openBtn)openCard()});
-document.querySelectorAll('.spider').forEach(spider=>{spider.addEventListener('click',e=>{e.stopPropagation();spider.classList.remove('reacted');void spider.offsetWidth;spider.classList.add('reacted')})})
-})();
+const front=document.getElementById("front");
+
+document.getElementById("openBtn").onclick=()=>{
+front.classList.add("open");
+};
+
+front.onclick=(e)=>{
+if(!e.target.closest(".spider") && e.target.id!=="openBtn"){
+front.classList.add("open");
+}
+};
+
+document.querySelectorAll(".spider").forEach(s=>{
+s.onclick=(e)=>{
+e.stopPropagation();
+s.style.transform="scale(1.5) rotate(20deg)";
+setTimeout(()=>s.style.transform="",400);
+};
+});
 </script>
+
 </body>
 </html>
